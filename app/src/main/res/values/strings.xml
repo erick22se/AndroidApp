@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SoldAplication</string>
+    <string name="user_hint">User</string>
+    <string name="password_hint">Password</string>
+    <string name="enter_text">Enter</string>
+    <string name="forgot_text">Forgot your password?</string>
+    <string name="notregistered_text">Not yet registered?</string>
+    <string name="register_text">Register</string>
+    <string name="orregister_text">Or register with:</string>
 </resources>
