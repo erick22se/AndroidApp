@@ -14,5 +14,7 @@ public class LoadingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
         ic_img = (ImageView) findViewById(R.id.ic_sold);
+        Animation anim = AnimationUtils.loadAnimation(this, R.anim.loading_tran);
+        ic_img.startAnimation(anim);
     }
 }
