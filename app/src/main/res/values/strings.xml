@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SoldAplication</string>
+    <string name="app_name">SOLD</string>
     <string name="user_hint">User</string>
     <string name="password_hint">Password</string>
     <string name="enter_text">Enter</string>
