@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.soldaplication.Activities.RegisterStepOneActivity">
+    <TextView
+    android:id="@+id/registerTittle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/title_register"
+    android:layout_margin="6dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:textAppearance="?android:textAppearanceLarge"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nameTextInputLayout"
+        android:layout_width="@dimen/default_length_space"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerTittle"  >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/nameTextInputEdit"
+            android:layout_width="@dimen/default_length_space"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_hint"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/lastNameTextInputLayout"
+        android:layout_width="@dimen/default_length_space"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTextInputLayout" >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/lastNameTextInputEdit"
+            android:layout_width="@dimen/default_length_space"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name_hint"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        android:layout_width="@dimen/default_length_space"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastNameTextInputLayout" >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/emailTextInputEdit"
+            android:layout_width="@dimen/default_length_space"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_hint"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="@dimen/default_length_space"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailTextInputLayout"  >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/passwordTextInputEdit"
+            android:layout_width="@dimen/default_length_space"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rePasswordTextInputLayout"
+        android:layout_width="@dimen/default_length_space"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout"  >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/rePasswordTextInputEdit"
+            android:layout_width="@dimen/default_length_space"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Passwrod"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/addressTextInputLayout"
+        android:layout_width="@dimen/default_length_space"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rePasswordTextInputLayout">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/addressTextInputEdit"
+            android:layout_width="@dimen/default_length_space"
+            android:layout_height="wrap_content"
+            android:hint="@string/Address"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/cellphoneTextInputLayout"
+        android:layout_width="@dimen/default_length_space"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addressTextInputLayout">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/cellphoneTextInputEdit"
+            android:layout_width="@dimen/default_length_space"
+            android:layout_height="wrap_content"
+            android:hint="@string/cellphone"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_button"
+        android:layout_margin="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cellphoneTextInputLayout"/>
+
+
+</android.support.constraint.ConstraintLayout>

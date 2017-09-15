@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">SOLD</string>
-    <string name="user_hint">User</string>
+    <string name="email_hint">E-mail</string>
     <string name="password_hint">Password</string>
     <string name="enter_text">Enter</string>
+    <string name="name_hint">Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="Address">Address</string>
+    <string name="cellphone">Cellphone</string>
+    <string name="next_button">Next</string>
+    <string name="back_button">Back</string>
+    <string name="save_button">Save</string>
     <string name="forgot_text">Forgot your password?</string>
     <string name="not_registered_text">Not yet registered?</string>
     <string name="register_text">Register</string>
@@ -11,4 +18,5 @@
     <string name="title_home">Home</string>
     <string name="title_myAuctions">My Auctions</string>
     <string name="title_store">Store</string>
+    <string name="title_register">New account</string>
 </resources>
