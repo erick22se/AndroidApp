@@ -1,13 +1,14 @@
-package com.example.soldaplication;
+package com.example.soldaplication.Activities;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import com.example.soldaplication.R;
 
 public class LoadingActivity extends AppCompatActivity {
     Thread splashTread;
