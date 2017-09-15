@@ -7,6 +7,11 @@
     <string name="last_name_hint">Last Name</string>
     <string name="Address">Address</string>
     <string name="cellphone">Cellphone</string>
+    <string name="type_card_text">Pay by</string>
+    <string name="card_number_text">Pay by</string>
+    <string name="card_due_date_text">Due date of the card</string>
+    <string name="card_secure_code_text">Secure code of the card</string>
+    <string name="condition_text">I agree with the terms and conditions </string>
     <string name="next_button">Next</string>
     <string name="back_button">Back</string>
     <string name="save_button">Save</string>

@@ -20,7 +20,8 @@
         <activity
             android:name=".Activities.MainActivity"
             android:label="@string/title_activity_main" />
-        <activity android:name=".Activities.RegisterStepOneActivity"></activity>
+        <activity android:name=".Activities.RegisterStepOneActivity"/>
+        <activity android:name=".Activities.RegisterStepTwoActivity"/>
     </application>
 
 </manifest>

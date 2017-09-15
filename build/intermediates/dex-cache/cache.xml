@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Mobiles\AndroidApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Mobiles\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_c732e5585cd8557ba256534bfcbbabca4bc16f84\classes.dex" />
+        <dex dex="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1492d7e85135827da266538ab1cca53ab4de8421\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Mobiles\AndroidApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="2169ae6ec923a4b102d8f69f7e2ec01b14c816d9">
-        <dex dex="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Mobiles\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b3c75aa9117f9263e13b67b7f405e0a6a8deba06\classes.dex" />
+        sha1="cea2531a0e63466d17a6a7522f770b53efd68e9c">
+        <dex dex="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_fdc31d0fd827d794184accdfabef7cf118449b61\classes.dex" />
     </item>
 
 </items>
