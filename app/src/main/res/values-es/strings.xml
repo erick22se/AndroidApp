@@ -3,9 +3,9 @@
     <string name="app_name">SOLD</string>
     <string name="enter_text">Ingresar</string>
     <string name="forgot_text">¿Olvidaste tu contraseña?</string>
-    <string name="notregistered_text">¿Aún no estas registrado?</string>
-    <string name="orregister_text">O regístrate con:</string>
+    <string name="not_registered_text">¿Aún no estas registrado?</string>
+    <string name="or_register_text">O regístrate con:</string>
     <string name="password_hint">Contraseña</string>
     <string name="register_text">Regístrate</string>
-    <string name="user_hint">Usuario</string>
+    <string name="email_hint">Usuario</string>
 </resources>
