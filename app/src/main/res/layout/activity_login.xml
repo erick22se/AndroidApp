@@ -83,7 +83,7 @@
             android:id="@+id/notRegister_TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/notregistered_text"
+            android:text="@string/not_registered_text"
             android:layout_margin="6dp" />
         <TextView
             android:id="@+id/register_TextView"
@@ -110,7 +110,7 @@
         android:id="@+id/orRegister_TexView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/orregister_text"
+        android:text="@string/or_register_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/separator"/>
@@ -124,12 +124,12 @@
             android:id="@+id/fbImagebutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_facebook_circular_logo"/>
+            app:srcCompat="@drawable/ic_facebook_circular_logo"/>
         <ImageButton
             android:id="@+id/googleImageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_google_plus_logo_button"
+            app:srcCompat="@drawable/ic_google_plus_logo_button"
             android:layout_margin="10dp"
             app:layout_constraintLeft_toRightOf="@id/fbImagebutton"/>
     </android.support.constraint.ConstraintLayout>
