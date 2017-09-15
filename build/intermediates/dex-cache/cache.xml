@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\ERICK\.android\build-cache\0408dc2c09f435d02d9f0cfc35f4ce51ab188b43\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec4801a856b3ab50c3320d3d443e83fce64cfcff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -16,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="cea2531a0e63466d17a6a7522f770b53efd68e9c">
+        sha1="7b277792d08967e7bf79381e81ab0f10cef9662a">
         <dex dex="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_fdc31d0fd827d794184accdfabef7cf118449b61\classes.dex" />
     </item>
 
