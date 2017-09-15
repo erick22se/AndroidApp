@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.soldaplication.Activities.RegisterStepOneActivity">
+    tools:context="com.example.soldaplication.Activity.Activities.RegisterStepOneActivity">
     <TextView
-    android:id="@+id/registerTittle"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/title_register"
-    android:layout_margin="6dp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    android:textAppearance="?android:textAppearanceLarge"/>
+        android:id="@+id/registerTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_register"
+        android:layout_margin="@dimen/margin_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="?android:textAppearanceLarge"/>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/nameTextInputLayout"
         android:layout_width="@dimen/default_length_space"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_margin="@dimen/margin_default"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/registerTittle"  >
@@ -35,7 +35,7 @@
         android:id="@+id/lastNameTextInputLayout"
         android:layout_width="@dimen/default_length_space"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_margin="@dimen/margin_default"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nameTextInputLayout" >
@@ -50,7 +50,7 @@
         android:id="@+id/emailTextInputLayout"
         android:layout_width="@dimen/default_length_space"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_margin="@dimen/margin_default"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lastNameTextInputLayout" >
@@ -65,7 +65,7 @@
         android:id="@+id/passwordTextInputLayout"
         android:layout_width="@dimen/default_length_space"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_margin="@dimen/margin_default"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailTextInputLayout"  >
@@ -80,7 +80,7 @@
         android:id="@+id/rePasswordTextInputLayout"
         android:layout_width="@dimen/default_length_space"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_margin="@dimen/margin_default"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout"  >
@@ -88,14 +88,14 @@
             android:id="@+id/rePasswordTextInputEdit"
             android:layout_width="@dimen/default_length_space"
             android:layout_height="wrap_content"
-            android:hint="Confirm Passwrod"/>
+            android:hint="Confirm Password"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/addressTextInputLayout"
         android:layout_width="@dimen/default_length_space"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_margin="@dimen/margin_default"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rePasswordTextInputLayout">
@@ -110,7 +110,7 @@
         android:id="@+id/cellphoneTextInputLayout"
         android:layout_width="@dimen/default_length_space"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_margin="@dimen/margin_default"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/addressTextInputLayout">
@@ -125,8 +125,8 @@
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save_button"
-        android:layout_margin="6dp"
+        android:text="@string/next_button"
+        android:layout_margin="@dimen/margin_default"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
