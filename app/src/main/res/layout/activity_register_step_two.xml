@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:textAppearance="?android:textAppearanceLarge"/>
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <LinearLayout
         android:id="@+id/HorizontalLinearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,30 +29,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/type_card_text"
-            android:layout_margin="@dimen/margin_default"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            android:layout_margin="@dimen/margin_default"/>
         <RadioButton
             android:id="@+id/visaRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_default"
             android:text="Visa"
-            android:checked="true"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/typeCardTextView"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            android:checked="true"/>
         <RadioButton
             android:id="@+id/mastercardRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_default"
-            android:text="Mastercard"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-    </android.support.v7.widget.LinearLayoutCompat>
-
+            android:text="Mastercard"/>
+    </LinearLayout>
     <android.support.design.widget.TextInputLayout
         android:id="@+id/cardNumberTextInputLayout"
         android:layout_width="@dimen/default_length_space"
@@ -65,6 +56,7 @@
             android:id="@+id/cardNumberTextInputEdit"
             android:layout_width="@dimen/default_length_space"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/card_number_text"/>
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout

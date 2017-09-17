@@ -3,30 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\ERICK\.android\build-cache\0408dc2c09f435d02d9f0cfc35f4ce51ab188b43\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
-        <dex dex="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec4801a856b3ab50c3320d3d443e83fce64cfcff\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="E:\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1492d7e85135827da266538ab1cca53ab4de8421\classes.dex" />
+        <dex dex="E:\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0cefc354aa9c6b318c63f2291865e03da6a64b81\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="E:\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="7b277792d08967e7bf79381e81ab0f10cef9662a">
-        <dex dex="C:\Users\ERICK\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_fdc31d0fd827d794184accdfabef7cf118449b61\classes.dex" />
+        sha1="3f0ba3c69751aef03fe64360e3e4ee600f17813d">
+        <dex dex="E:\UniversidadUPC\SextoCiclo\Moviles\TrabajoFinal\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_85564834ee9dd434113f38906b862f993639b9a5\classes.dex" />
     </item>
 
 </items>
