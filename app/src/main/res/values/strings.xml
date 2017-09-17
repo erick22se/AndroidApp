@@ -19,7 +19,7 @@
     <string name="not_registered_text">Not yet registered?</string>
     <string name="register_text">Register</string>
     <string name="or_register_text">Or register with:</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Sold</string>
     <string name="title_home">Home</string>
     <string name="title_myAuctions">My Auctions</string>
     <string name="title_store">Store</string>

@@ -56,6 +56,7 @@
             android:id="@+id/cardNumberTextInputEdit"
             android:layout_width="@dimen/default_length_space"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/card_number_text"/>
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
