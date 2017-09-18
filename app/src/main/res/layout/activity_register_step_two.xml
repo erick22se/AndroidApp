@@ -30,19 +30,25 @@
             android:layout_height="wrap_content"
             android:text="@string/type_card_text"
             android:layout_margin="@dimen/margin_default"/>
-        <RadioButton
-            android:id="@+id/visaRadioButton"
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_default"
-            android:text="Visa"
-            android:checked="true"/>
-        <RadioButton
-            android:id="@+id/mastercardRadioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_default"
-            android:text="Mastercard"/>
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/visaRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:text="Visa"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/mastercardRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:text="Mastercard"/>
+        </RadioGroup>
+
     </LinearLayout>
     <android.support.design.widget.TextInputLayout
         android:id="@+id/cardNumberTextInputLayout"
