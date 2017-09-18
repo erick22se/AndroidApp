@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/auctionCardView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="140dp"
+    android:layout_height="170dp"
     android:layout_margin="@dimen/margin_default"
     app:cardCornerRadius="4dp"
     app:cardElevation="4dp">
@@ -18,45 +18,54 @@
             android:id="@+id/nameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_margin="@dimen/margin_default"
             android:text="Title Sample"/>
         <ImageView
             android:id="@+id/pictureImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:layout_margin="@dimen/margin_default"
             android:src="@mipmap/ic_launcher"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="center">
             <TextView
                 android:id="@+id/durationTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="@dimen/margin_default"
                 android:text="Duration"/>
             <TextView
                 android:id="@+id/sampleTimeTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0"
                 android:layout_margin="@dimen/margin_default"
                 android:text="Sample"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="center">
             <TextView
                 android:id="@+id/priceTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="@dimen/margin_default"
                 android:text="Price"/>
             <TextView
                 android:id="@+id/samplePriceTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_margin="@dimen/margin_default"
                 android:text="Sample"/>
         </LinearLayout>
     </LinearLayout>
