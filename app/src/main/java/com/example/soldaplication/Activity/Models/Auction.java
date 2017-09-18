@@ -1,7 +1,6 @@
 package com.example.soldaplication.Activity.Models;
 
 import java.util.Date;
-import java.util.Timer;
 
 /**
  * Created by Erick_lap on 17/09/2017.
@@ -13,21 +12,19 @@ public class Auction {
     private String description;
     private int pictureId;
     private Date duration;
-    private float priceBase;
-    private float priceWinner;
-    private String address;
+    private float basePrice;
+    private float winnerPrice;
     private User seller;
     private User winner;
 
-    public Auction(int auctionId, String tittle, String description, int pictureId, Date duration, float priceBase, float priceWinner, String address, User seller, User winner) {
+    public Auction(int auctionId, String tittle, String description, int pictureId, Date duration, float basePrice, float winnerPrice, User seller, User winner) {
         this.auctionId = auctionId;
         this.tittle = tittle;
         this.description = description;
         this.pictureId = pictureId;
         this.duration = duration;
-        this.priceBase = priceBase;
-        this.priceWinner = priceWinner;
-        this.address = address;
+        this.basePrice = basePrice;
+        this.winnerPrice = winnerPrice;
         this.seller = seller;
         this.winner = winner;
     }
@@ -80,30 +77,21 @@ public class Auction {
         return this;
     }
 
-    public float getPriceBase() {
-        return priceBase;
+    public float getBasePrice() {
+        return basePrice;
     }
 
-    public Auction setPriceBase(float priceBase) {
-        this.priceBase = priceBase;
+    public Auction setBasePrice(float basePrice) {
+        this.basePrice = basePrice;
         return this;
     }
 
-    public float getPriceWinner() {
-        return priceWinner;
+    public float getWinnerPrice() {
+        return winnerPrice;
     }
 
-    public Auction setPriceWinner(float priceWinner) {
-        this.priceWinner = priceWinner;
-        return this;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public Auction setAddress(String address) {
-        this.address = address;
+    public Auction setWinnerPrice(float winnerPrice) {
+        this.winnerPrice = winnerPrice;
         return this;
     }
 
