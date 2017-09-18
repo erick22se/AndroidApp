@@ -5,6 +5,7 @@ package com.example.soldaplication.Activity.Models;
  */
 
 public class User {
+    private int userId;
     private String name;
     private String lastName;
     private String email;
@@ -14,7 +15,8 @@ public class User {
     private int cardNumber;
     private int secureCode;
 
-    public User(String name, String lastName, String email, String password, String address, int cellphone, int cardNumber, int secureCode) {
+    public User(int userId, String name, String lastName, String email, String password, String address, int cellphone, int cardNumber, int secureCode) {
+        this.userId = userId;
         this.name = name;
         this.lastName = lastName;
         this.email = email;
@@ -26,6 +28,15 @@ public class User {
     }
 
     public User() {
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public User setUserId(int userId) {
+        this.userId = userId;
+        return this;
     }
 
     public String getName() {
