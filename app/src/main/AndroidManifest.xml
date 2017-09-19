@@ -19,8 +19,7 @@
         <activity android:name=".Activity.Activities.LoginActivity" />
         <activity
             android:name=".Activity.Activities.MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/ButtonNavigationTheme"/>
+            android:label="@string/title_activity_main"/>
         <activity android:name=".Activity.Activities.RegisterStepOneActivity"/>
         <activity android:name=".Activity.Activities.RegisterStepTwoActivity"/>
     </application>
