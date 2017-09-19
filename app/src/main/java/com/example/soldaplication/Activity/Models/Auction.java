@@ -1,5 +1,7 @@
 package com.example.soldaplication.Activity.Models;
 
+import android.os.Bundle;
+
 import java.util.Date;
 
 /**
@@ -12,12 +14,12 @@ public class Auction {
     private String description;
     private int pictureId;
     private Date duration;
-    private float basePrice;
-    private float winnerPrice;
+    private int basePrice;
+    private int winnerPrice;
     private User seller;
     private User winner;
 
-    public Auction(int auctionId, String tittle, String description, int pictureId, Date duration, float basePrice, float winnerPrice, User seller, User winner) {
+    public Auction(int auctionId, String tittle, String description, int pictureId, Date duration, int basePrice, int winnerPrice, User seller, User winner) {
         this.auctionId = auctionId;
         this.tittle = tittle;
         this.description = description;
@@ -81,7 +83,7 @@ public class Auction {
         return basePrice;
     }
 
-    public Auction setBasePrice(float basePrice) {
+    public Auction setBasePrice(int basePrice) {
         this.basePrice = basePrice;
         return this;
     }
@@ -90,7 +92,7 @@ public class Auction {
         return winnerPrice;
     }
 
-    public Auction setWinnerPrice(float winnerPrice) {
+    public Auction setWinnerPrice(int winnerPrice) {
         this.winnerPrice = winnerPrice;
         return this;
     }
@@ -111,5 +113,23 @@ public class Auction {
     public Auction setWinner(User winner) {
         this.winner = winner;
         return this;
+    }
+    public Bundle toBundle() {
+        Bundle bundle = new Bundle();
+        bundle.putInt("auction_id", auctionId);
+        bundle.putString("title",tittle);
+        bundle.putString("description",description);
+        bundle.putInt("picture_id",pictureId);
+        bundle.putInt("base_price",basePrice);
+        bundle.putInt("winner_price",winnerPrice);
+        return bundle;
+    }
+
+    public static Auction fromBundle(Bundle bundle) {
+        Auction auction = new Auction();
+        return auction.setAuctionId(bundle.getInt("auction_id"))
+                .setTittle(bundle.getString("title")).setDescription(bundle.getString("description"))
+                .setPictureId(bundle.getInt("picture_id")).setBasePrice(bundle.getInt("base_price"))
+                .setWinnerPrice(bundle.getInt("winner_price"));
     }
 }
