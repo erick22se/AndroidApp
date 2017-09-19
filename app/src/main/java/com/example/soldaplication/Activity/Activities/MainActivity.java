@@ -1,17 +1,24 @@
 package com.example.soldaplication.Activity.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.soldaplication.R;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
+    private Toolbar mainToolbar;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -38,10 +45,40 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mainToolbar = (Toolbar)findViewById(R.id.toolBar);
+        setSupportActionBar(mainToolbar);
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.toolbar_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_profile)
+        {
+            Toast.makeText( MainActivity.this,
+                            "TODO: Create a profile_activity",
+                            Toast.LENGTH_SHORT).show();
+        }
+        if (item.getItemId() == R.id.action_auction_history)
+        {
+            Toast.makeText( MainActivity.this,
+                    "TODO: Create a auction_history_activity",
+                    Toast.LENGTH_SHORT).show();
+        }
+        if (item.getItemId() == R.id.action_logout)
+        {
+            Toast.makeText( MainActivity.this,
+                    "TODO: Return to The Login",
+                    Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
