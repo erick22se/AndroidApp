@@ -15,7 +15,7 @@
         android:orientation="vertical"
         android:gravity="center">
         <TextView
-            android:id="@+id/nameTextView"
+            android:id="@+id/tileTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_margin="@dimen/margin_default"
-                android:text="Duration"/>
+                android:text="@string/duration_text"/>
             <TextView
                 android:id="@+id/sampleTimeTextView"
                 android:layout_width="wrap_content"
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_margin="@dimen/margin_default"
-                android:text="Price"/>
+                android:text="@string/price_text"/>
             <TextView
                 android:id="@+id/samplePriceTextView"
                 android:layout_width="wrap_content"
