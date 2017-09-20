@@ -1,6 +1,7 @@
 package com.example.soldaplication.Activity.Models;
 
-import android.os.Bundle;
+
+import java.util.Calendar;
 
 import java.util.Date;
 
@@ -13,13 +14,14 @@ public class Auction {
     private String tittle;
     private String description;
     private int pictureId;
-    private Date duration;
-    private int basePrice;
-    private int winnerPrice;
+
+    private Calendar duration;
+    private float basePrice;
+    private float winnerPrice;
     private User seller;
     private User winner;
 
-    public Auction(int auctionId, String tittle, String description, int pictureId, Date duration, int basePrice, int winnerPrice, User seller, User winner) {
+    public Auction(int auctionId, String tittle, String description, int pictureId, Calendar duration, float basePrice, float winnerPrice, User seller, User winner) {
         this.auctionId = auctionId;
         this.tittle = tittle;
         this.description = description;
@@ -70,11 +72,11 @@ public class Auction {
         return this;
     }
 
-    public Date getDuration() {
+    public Calendar getDuration() {
         return duration;
     }
 
-    public Auction setDuration(Date duration) {
+    public Auction setDuration(Calendar duration) {
         this.duration = duration;
         return this;
     }
