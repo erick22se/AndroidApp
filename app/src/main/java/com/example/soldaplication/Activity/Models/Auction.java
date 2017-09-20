@@ -1,6 +1,8 @@
 package com.example.soldaplication.Activity.Models;
 
+
 import java.util.Calendar;
+
 import java.util.Date;
 
 /**
@@ -12,6 +14,7 @@ public class Auction {
     private String tittle;
     private String description;
     private int pictureId;
+
     private Calendar duration;
     private float basePrice;
     private float winnerPrice;
@@ -82,7 +85,7 @@ public class Auction {
         return basePrice;
     }
 
-    public Auction setBasePrice(float basePrice) {
+    public Auction setBasePrice(int basePrice) {
         this.basePrice = basePrice;
         return this;
     }
@@ -91,7 +94,7 @@ public class Auction {
         return winnerPrice;
     }
 
-    public Auction setWinnerPrice(float winnerPrice) {
+    public Auction setWinnerPrice(int winnerPrice) {
         this.winnerPrice = winnerPrice;
         return this;
     }
@@ -112,5 +115,23 @@ public class Auction {
     public Auction setWinner(User winner) {
         this.winner = winner;
         return this;
+    }
+    public Bundle toBundle() {
+        Bundle bundle = new Bundle();
+        bundle.putInt("auction_id", auctionId);
+        bundle.putString("title",tittle);
+        bundle.putString("description",description);
+        bundle.putInt("picture_id",pictureId);
+        bundle.putInt("base_price",basePrice);
+        bundle.putInt("winner_price",winnerPrice);
+        return bundle;
+    }
+
+    public static Auction fromBundle(Bundle bundle) {
+        Auction auction = new Auction();
+        return auction.setAuctionId(bundle.getInt("auction_id"))
+                .setTittle(bundle.getString("title")).setDescription(bundle.getString("description"))
+                .setPictureId(bundle.getInt("picture_id")).setBasePrice(bundle.getInt("base_price"))
+                .setWinnerPrice(bundle.getInt("winner_price"));
     }
 }
