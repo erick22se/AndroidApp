@@ -1,9 +1,9 @@
 package com.example.soldaplication.Activity.Models;
 
 
-import java.util.Calendar;
+import android.os.Bundle;
 
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  * Created by Erick_lap on 17/09/2017.
@@ -11,19 +11,19 @@ import java.util.Date;
 
 public class Auction {
     private int auctionId;
-    private String tittle;
+    private String title;
     private String description;
     private int pictureId;
 
     private Calendar duration;
-    private float basePrice;
-    private float winnerPrice;
+    private int basePrice;
+    private int winnerPrice;
     private User seller;
     private User winner;
 
-    public Auction(int auctionId, String tittle, String description, int pictureId, Calendar duration, float basePrice, float winnerPrice, User seller, User winner) {
+    public Auction(int auctionId, String tittle, String description, int pictureId, Calendar duration, int basePrice, int winnerPrice, User seller, User winner) {
         this.auctionId = auctionId;
-        this.tittle = tittle;
+        this.title = tittle;
         this.description = description;
         this.pictureId = pictureId;
         this.duration = duration;
@@ -45,12 +45,12 @@ public class Auction {
         return this;
     }
 
-    public String getTittle() {
-        return tittle;
+    public String getTitle() {
+        return title;
     }
 
-    public Auction setTittle(String tittle) {
-        this.tittle = tittle;
+    public Auction setTitle(String title) {
+        this.title = title;
         return this;
     }
 
@@ -81,7 +81,7 @@ public class Auction {
         return this;
     }
 
-    public float getBasePrice() {
+    public int getBasePrice() {
         return basePrice;
     }
 
@@ -90,7 +90,7 @@ public class Auction {
         return this;
     }
 
-    public float getWinnerPrice() {
+    public int getWinnerPrice() {
         return winnerPrice;
     }
 
@@ -119,7 +119,7 @@ public class Auction {
     public Bundle toBundle() {
         Bundle bundle = new Bundle();
         bundle.putInt("auction_id", auctionId);
-        bundle.putString("title",tittle);
+        bundle.putString("title", title);
         bundle.putString("description",description);
         bundle.putInt("picture_id",pictureId);
         bundle.putInt("base_price",basePrice);
@@ -130,7 +130,7 @@ public class Auction {
     public static Auction fromBundle(Bundle bundle) {
         Auction auction = new Auction();
         return auction.setAuctionId(bundle.getInt("auction_id"))
-                .setTittle(bundle.getString("title")).setDescription(bundle.getString("description"))
+                .setTitle(bundle.getString("title")).setDescription(bundle.getString("description"))
                 .setPictureId(bundle.getInt("picture_id")).setBasePrice(bundle.getInt("base_price"))
                 .setWinnerPrice(bundle.getInt("winner_price"));
     }
