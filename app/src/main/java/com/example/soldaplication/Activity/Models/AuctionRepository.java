@@ -12,29 +12,30 @@ import java.util.List;
  */
 
 public class AuctionRepository {
-    private static AuctionRepository instace;
+    private static AuctionRepository instance;
     private List<Auction> auctions;
 
-    public static AuctionRepository getInstace()
+    public static AuctionRepository getInstance()
     {
-        if(instace == null) instace = new AuctionRepository();
-        return instace;
+        if(instance == null) instance = new AuctionRepository();
+        return instance;
     }
     public AuctionRepository()
     {
         User seller = new User();
         User buyer = new User();
         auctions = new ArrayList<>();
-        auctions.add(new Auction(1,"Sample 1","Sample description", R.mipmap.ic_launcher,Calendar.getInstance(),100,0,seller,buyer));
-        auctions.add(new Auction(2,"Sample 2","Sample description", R.mipmap.ic_launcher,Calendar.getInstance(),100,0,seller,buyer));
-        auctions.add(new Auction(3,"Sample 3","Sample description", R.mipmap.ic_launcher,Calendar.getInstance(),100,0,seller,buyer));
-        auctions.add(new Auction(4,"Sample 4","Sample description", R.mipmap.ic_launcher,Calendar.getInstance(),100,0,seller,buyer));
-        auctions.add(new Auction(5,"Sample 5","Sample description", R.mipmap.ic_launcher, Calendar.getInstance(),100,0,seller,buyer));
+        auctions.add(new Auction(1,"Sample 1","Sample description", R.mipmap.ic_launcher,Calendar.getInstance(),1,0,seller,buyer));
+        auctions.add(new Auction(2,"Sample 2","Sample description", R.mipmap.ic_launcher,Calendar.getInstance(),2,0,seller,buyer));
+        auctions.add(new Auction(3,"Sample 3","Sample description", R.mipmap.ic_launcher,Calendar.getInstance(),3,0,seller,buyer));
+        auctions.add(new Auction(4,"Sample 4","Sample description", R.mipmap.ic_launcher,Calendar.getInstance(),4,0,seller,buyer));
+        auctions.add(new Auction(5,"Sample 5","Sample description", R.mipmap.ic_launcher, Calendar.getInstance(),5,0,seller,buyer));
     }
     public List<Auction> getAuctions()
     {
         return auctions;
     }
+
 
 
 }
