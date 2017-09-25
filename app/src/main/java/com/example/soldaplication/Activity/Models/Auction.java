@@ -134,4 +134,15 @@ public class Auction {
                 .setPictureId(bundle.getInt("picture_id")).setBasePrice(bundle.getInt("base_price"))
                 .setWinnerPrice(bundle.getInt("winner_price"));
     }
+    public String getPriceString(){
+        return Integer.toString(getBasePrice());
+
+    }
+    public String getCompleteDuration(){
+        String completeDuration;
+        completeDuration=Integer.toString(getDuration().HOUR)
+                +" : "+Integer.toString(getDuration().MINUTE)
+                +" : "+Integer.toString(getDuration().SECOND);
+        return completeDuration;
+    }
 }
