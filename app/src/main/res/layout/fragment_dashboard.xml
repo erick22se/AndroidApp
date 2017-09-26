@@ -9,19 +9,19 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <android.support.constraint.ConstraintLayout
+        <LinearLayout
             android:id="@+id/topConstraint"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_margin="8dp">
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
             <Button
                 android:id="@+id/recentButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/recent"
+                android:layout_weight="1"
                 app:layout_constraintStart_toStartOf="parent"
                 />
             <Button
@@ -29,8 +29,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cheaper"
+                android:layout_weight="1"
                 app:layout_constraintStart_toEndOf="@id/recentButton"/>
-        </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
         <android.support.constraint.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
