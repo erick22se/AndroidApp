@@ -57,9 +57,12 @@ public class AuctionsAdapter extends RecyclerView.Adapter<AuctionsAdapter.ViewHo
             public void onClick(View view) {
                 //TODO: Star Auction Information Activity
                 AppCompatActivity appCompatActivity=(AppCompatActivity) view.getContext() ;
+                AuctionInformationFragment auctionInformationFragment=new AuctionInformationFragment();
+                auctionInformationFragment.setArguments(auction.toBundle());
                 appCompatActivity.getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.content,new AuctionInformationFragment()).commit();
+                        .replace(R.id.content,auctionInformationFragment).commit();
+
 
             }
         });
