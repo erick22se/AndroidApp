@@ -4,6 +4,7 @@ package com.example.soldaplication.Activity.Models;
 import android.os.Bundle;
 
 import java.util.Calendar;
+import java.util.Formatter;
 
 /**
  * Created by Erick_lap on 17/09/2017.
@@ -124,6 +125,8 @@ public class Auction {
         bundle.putInt("picture_id",pictureId);
         bundle.putInt("base_price",basePrice);
         bundle.putInt("winner_price",winnerPrice);
+        bundle.putString("duration",getCompleteDuration());
+
         return bundle;
     }
 
@@ -133,5 +136,16 @@ public class Auction {
                 .setTitle(bundle.getString("title")).setDescription(bundle.getString("description"))
                 .setPictureId(bundle.getInt("picture_id")).setBasePrice(bundle.getInt("base_price"))
                 .setWinnerPrice(bundle.getInt("winner_price"));
+    }
+    public String getPriceString(){
+        return Integer.toString(getBasePrice());
+
+    }
+    public String getCompleteDuration(){
+        String completeDuration;
+        completeDuration=Integer.toString(getDuration().HOUR)
+                +" : "+Integer.toString(getDuration().MINUTE)
+                +" : "+Integer.toString(getDuration().SECOND);
+        return completeDuration;
     }
 }

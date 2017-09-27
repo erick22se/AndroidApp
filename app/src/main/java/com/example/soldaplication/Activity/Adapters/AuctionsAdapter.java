@@ -1,5 +1,7 @@
 package com.example.soldaplication.Activity.Adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.soldaplication.Activity.Activities.AuctionInformationActivity;
 import com.example.soldaplication.Activity.Models.Auction;
 import com.example.soldaplication.R;
 
@@ -42,14 +45,20 @@ public class AuctionsAdapter extends RecyclerView.Adapter<AuctionsAdapter.ViewHo
     @Override
     public void onBindViewHolder(AuctionsAdapter.ViewHolder holder, int position) {
         final Auction auction = auctions.get(position);
-        holder.sampleDurationTextView.setText(auction.getDuration().getTime().toString());
-        holder.samplePriceTextView.setText(auction.getBasePrice());
+        holder.sampleDurationTextView.setText(auction.getCompleteDuration());
+        holder.samplePriceTextView.setText(auction.getPriceString());
         holder.titleTextView.setText(auction.getTitle());
         holder.pictureImageView.setImageResource(auction.getPictureId());
         holder.card_auction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO: Auction Activity
+                //TODO: Star Auction Information Activity
+                Context context = view.getContext();
+                Intent intent = new Intent(context, AuctionInformationActivity.class);
+                intent.putExtras(auction.toBundle());
+                context.startActivity(intent);
+
+
             }
         });
     }
