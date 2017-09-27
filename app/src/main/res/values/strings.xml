@@ -35,4 +35,5 @@
     <string name="duration_text">Duration</string>
     <string name="price_text">Price</string>
     <string name="example_text">Example Text</string>
+    <string name="title_activity_auction_information">AuctionInformationActivity</string>
 </resources>
