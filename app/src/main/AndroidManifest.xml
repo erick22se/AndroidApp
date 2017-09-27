@@ -9,19 +9,28 @@
         android:roundIcon="@mipmap/ic_sold"
         android:supportsRtl="true"
         android:theme="@style/LoadingTheme">
-        <activity
-            android:name=".Activity.Activities.LoadingActivity">
+        <activity android:name=".Activity.Activities.LoadingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".Activity.Activities.LoginActivity" />
         <activity
             android:name=".Activity.Activities.MainActivity"
-            android:label="@string/title_activity_main"/>
-        <activity android:name=".Activity.Activities.RegisterStepOneActivity"/>
-        <activity android:name=".Activity.Activities.RegisterStepTwoActivity"/>
+            android:label="@string/title_activity_main" />
+        <activity android:name=".Activity.Activities.RegisterStepOneActivity" />
+        <activity android:name=".Activity.Activities.RegisterStepTwoActivity" />
+        <activity
+            android:name=".Activity.Activities.AuctionInformationActivity"
+            android:label="@string/title_activity_auction_information"
+            android:parentActivityName=".Activity.Activities.MainActivity"
+            android:theme="@style/LoadingTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.soldaplication.Activity.Activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
