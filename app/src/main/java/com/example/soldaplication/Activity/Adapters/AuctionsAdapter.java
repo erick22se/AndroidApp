@@ -1,5 +1,6 @@
 package com.example.soldaplication.Activity.Adapters;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.soldaplication.Activity.Activities.MainActivity;
-import com.example.soldaplication.Activity.Fragments.AuctionInformationFragment;
 import com.example.soldaplication.Activity.Models.Auction;
 import com.example.soldaplication.*;
 import com.example.soldaplication.R;
@@ -56,11 +56,7 @@ public class AuctionsAdapter extends RecyclerView.Adapter<AuctionsAdapter.ViewHo
             @Override
             public void onClick(View view) {
                 //TODO: Star Auction Information Activity
-                AppCompatActivity appCompatActivity=(AppCompatActivity) view.getContext() ;
-                appCompatActivity.getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.content,new AuctionInformationFragment()).commit();
-
+                
             }
         });
     }
