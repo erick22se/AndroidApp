@@ -29,11 +29,14 @@
     <string name="cheaper">Cheaper</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="profile_text">Profile</string>
     <string name="auctions_history_text">Auctions history</string>
     <string name="log_out_text">Log out</string>
     <string name="duration_text">Duration</string>
     <string name="price_text">Price</string>
+<<<<<<< HEAD
     <string name="title_activity_auction_information">AuctionInformationActivity</string>
+=======
+    <string name="example_text">Example Text</string>
+>>>>>>> bf6c01eb954a322e4ea486b5300e473b99e49c7b
 </resources>

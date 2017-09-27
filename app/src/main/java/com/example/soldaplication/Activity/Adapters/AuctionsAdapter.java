@@ -56,7 +56,6 @@ public class AuctionsAdapter extends RecyclerView.Adapter<AuctionsAdapter.ViewHo
             @Override
             public void onClick(View view) {
                 //TODO: Star Auction Information Activity
-                
             }
         });
     }
