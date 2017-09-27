@@ -28,6 +28,8 @@ public class AuctionInformationActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Auction auction = Auction.fromBundle(getIntent().getExtras());
+        
+        //TODO: Human Error
 
         titleTextView = (TextView) findViewById(R.id.titleInformationTextView);
         titleTextView.setText(auction.getTitle());
