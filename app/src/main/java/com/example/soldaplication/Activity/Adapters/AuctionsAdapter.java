@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.soldaplication.Activity.Activities.AuctionInformationActivity;
 import com.example.soldaplication.Activity.Activities.MainActivity;
 import com.example.soldaplication.Activity.Models.Auction;
 import com.example.soldaplication.R;
@@ -17,7 +18,7 @@ import com.example.soldaplication.R;
 import java.util.List;
 
 /**
- * Created by Chuis on 9/18/2017.
+ * Created by Gabriel on 9/18/2017.
  */
 
 public class AuctionsAdapter extends RecyclerView.Adapter<AuctionsAdapter.ViewHolder> {
