@@ -27,6 +27,13 @@
     <string name="category">Category</string>
     <string name="recent">Recent</string>
     <string name="cheaper">Cheaper</string>
+    <string name="store_button">Exchange your GreenCoins</string>
+    <string name="quantity">Quantity: </string>
+    <string name="price">Price: </string>
+    <string name="store_convert">Convert GreenCoins</string>
+    <string name="store_amount">Insert amount to convert here</string>
+    <string name="button_convert">Convert</string>
+    <string name="store_agreement">I agree to convert my GreenCoins to my local currency</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="profile_text">Profile</string>
@@ -36,4 +43,5 @@
     <string name="price_text">Price</string>
     <string name="title_activity_auction_information">AuctionInformationActivity</string>
     <string name="example_text">Example Text</string>
+    <string name="title_activity_store_calculator">GreenCoin Calculator</string>
 </resources>
