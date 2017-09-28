@@ -8,7 +8,7 @@
     <string name="Address">Address</string>
     <string name="cellphone">Cellphone</string>
     <string name="type_card_text">Pay by</string>
-    <string name="card_number_text">Pay by</string>
+    <string name="card_number_text">Card number</string>
     <string name="card_due_date_text">Due date of the card</string>
     <string name="card_secure_code_text">Secure code of the card</string>
     <string name="condition_text">I agree with the terms and conditions </string>
@@ -34,7 +34,7 @@
     <string name="log_out_text">Log out</string>
     <string name="duration_text">Duration</string>
     <string name="price_text">Price</string>
-    <string name="title_activity_auction_information">AuctionInformationActivity</string>
     <string name="example_text">Example Text</string>
     <string name="title_activity_auction_information">AuctionInformationActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
 </resources>

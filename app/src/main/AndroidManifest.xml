@@ -31,7 +31,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.soldaplication.Activity.Activities.MainActivity" />
         </activity>
+        <activity
+            android:name=".Activity.Activities.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".Activity.Activities.MainActivity"
+            android:theme="@style/LoadingTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.soldaplication.Activity.Activities.MainActivity" />
+        </activity>
     </application>
-
 
 </manifest>

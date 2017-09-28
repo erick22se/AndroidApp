@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.soldaplication.Activity.Activities.MainActivity;
+import com.example.soldaplication.Activity.Activities.AuctionInformationActivity;
 import com.example.soldaplication.Activity.Models.Auction;
 import com.example.soldaplication.R;
 

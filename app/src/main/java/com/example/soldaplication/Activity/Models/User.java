@@ -1,5 +1,7 @@
 package com.example.soldaplication.Activity.Models;
 
+import android.os.Bundle;
+
 /**
  * Created by Erick_lap on 17/09/2017.
  */
@@ -14,7 +16,6 @@ public class User {
     private int cellphone;
     private int cardNumber;
     private int secureCode;
-
     public User(int userId, String name, String lastName, String email, String password, String address, int cellphone, int cardNumber, int secureCode) {
         this.userId = userId;
         this.name = name;
@@ -109,5 +110,32 @@ public class User {
     public User setSecureCode(int secureCode) {
         this.secureCode = secureCode;
         return this;
+    }
+    public Bundle toBundle() {
+        Bundle bundle = new Bundle();
+        bundle.putInt("userId",userId);
+        bundle.putString("name",name);
+        bundle.putString("lastName", lastName);
+        bundle.putString("email",email);
+        bundle.putString("password",password);
+        bundle.putString("address",address);
+        bundle.putInt("cellphone",cellphone);
+        bundle.putInt("cardNumber",cardNumber);
+        bundle.putInt("secureCode",secureCode);
+
+        return bundle;
+    }
+
+    public static User fromBundle(Bundle bundle) {
+        User user = new User();
+        return user.setUserId(bundle.getInt("userId"))
+                .setName(bundle.getString("name"))
+                .setLastName(bundle.getString("lastName"))
+                .setEmail(bundle.getString("email"))
+                .setPassword(bundle.getString("password"))
+                .setAddress(bundle.getString("address"))
+                .setCellphone(bundle.getInt("cellphone"))
+                .setCardNumber(bundle.getInt("cardNumber"))
+                .setSecureCode(bundle.getInt("secureCode"));
     }
 }

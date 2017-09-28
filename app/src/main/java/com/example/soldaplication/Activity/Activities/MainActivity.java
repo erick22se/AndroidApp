@@ -1,17 +1,16 @@
 package com.example.soldaplication.Activity.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-
 import android.widget.Toast;
 
 import com.example.soldaplication.Activity.Fragments.DashboardFragment;
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.content, new DashboardFragment()).commit();
+        fragmentTransaction.replace(R.id.content, new StoreFragment()).commit();
     }
 
     @Override
@@ -73,9 +72,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_profile)
         {
-            Toast.makeText( MainActivity.this,
-                            "TODO: Create a profile_activity",
-                            Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+            startActivity(intent);
         }
         if (item.getItemId() == R.id.action_auction_history)
         {
