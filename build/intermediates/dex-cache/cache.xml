@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="E:\UPC\APLICACIONES PARA DISPOSITIVOS MOVILES\development\AndroidApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="84060eac8151a0d8725e269cf711168530728501">
-        <dex dex="E:\UPC\APLICACIONES PARA DISPOSITIVOS MOVILES\development\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6044baf9dff49337ad4bdaadbeb70ed3f8bb243d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\UPC\APLICACIONES PARA DISPOSITIVOS MOVILES\development\AndroidApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Freddy\Downloads\Archivos UPC\Aplicaciones Moviles\AndroidApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="E:\UPC\APLICACIONES PARA DISPOSITIVOS MOVILES\development\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e94dd42f30a9bee4f7f70aa627cf000ec54d3f79\classes.dex" />
+        <dex dex="C:\Users\Freddy\Downloads\Archivos UPC\Aplicaciones Moviles\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_47614ec031ee1a39a21f83524bb1f8ee5c3de416\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Freddy\Downloads\Archivos UPC\Aplicaciones Moviles\AndroidApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5a9fde59e27ccbcab5962fb21d545a76be6e4109">
+        <dex dex="C:\Users\Freddy\Downloads\Archivos UPC\Aplicaciones Moviles\AndroidApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_bedfc4f7357259b687cd962c08d056114f957fe2\classes.dex" />
     </item>
 
 </items>

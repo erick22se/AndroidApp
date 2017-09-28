@@ -19,7 +19,8 @@
         <activity android:name=".Activity.Activities.LoginActivity" />
         <activity
             android:name=".Activity.Activities.MainActivity"
-            android:label="@string/title_activity_main" />
+            android:label="@string/title_activity_main"
+            android:launchMode="singleInstance" />
         <activity android:name=".Activity.Activities.RegisterStepOneActivity" />
         <activity android:name=".Activity.Activities.RegisterStepTwoActivity" />
         <activity
@@ -31,7 +32,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.soldaplication.Activity.Activities.MainActivity" />
         </activity>
+        <activity
+            android:name=".Activity.Activities.StoreCalculatorActivity"
+            android:label="@string/title_activity_store_calculator"
+            android:parentActivityName=".Activity.Activities.MainActivity"
+            android:theme="@style/LoadingTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.soldaplication.Activity.Activities.MainActivity" />
+        </activity>
     </application>
-
 
 </manifest>
