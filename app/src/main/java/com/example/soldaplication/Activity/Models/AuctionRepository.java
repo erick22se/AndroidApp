@@ -36,12 +36,4 @@ public class AuctionRepository {
         return auctions;
     }
 
-    public static User sampleUser()
-    {
-        User sample = new User(1,"juan","Torres","sample@hotmail.com","123","lima",123456789,1234,1234);
-        return sample;
-    }
-
-
-
 }

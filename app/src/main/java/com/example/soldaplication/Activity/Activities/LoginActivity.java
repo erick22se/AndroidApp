@@ -1,16 +1,16 @@
 package com.example.soldaplication.Activity.Activities;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.soldaplication.Activity.Models.AuctionRepository;
 import com.example.soldaplication.Activity.Models.User;
+import com.example.soldaplication.Activity.Models.UserRepository;
 import com.example.soldaplication.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
                 password = (TextInputEditText)findViewById(R.id.passwordTextInputEdit);
                 if(email.getText().length() == 0 && password.getText().length() == 0)
                 {
-                    User user = AuctionRepository.sampleUser();
+                    User user = UserRepository.sampleUser();
                     Intent intent = new Intent(view.getContext(),MainActivity.class);
                     intent.putExtras(user.toBundle());
                     startActivity(intent);

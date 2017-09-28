@@ -44,11 +44,20 @@ public class ProfileActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "Are you sure to keep the changes?", Snackbar.LENGTH_LONG)
+                        .setAction("Save", onClickListenerForAction()).show();
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    private View.OnClickListener onClickListenerForAction() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        };
     }
 
 }

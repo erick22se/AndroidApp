@@ -17,10 +17,12 @@ import com.example.soldaplication.Activity.Fragments.DashboardFragment;
 import com.example.soldaplication.Activity.Fragments.MyAuctionsFragment;
 import com.example.soldaplication.Activity.Fragments.StoreFragment;
 import com.example.soldaplication.Activity.Models.User;
+import com.example.soldaplication.Activity.Models.UserRepository;
 import com.example.soldaplication.R;
 
 public class MainActivity extends AppCompatActivity {
     private Toolbar mainToolbar;
+    private UserRepository userRepository;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
