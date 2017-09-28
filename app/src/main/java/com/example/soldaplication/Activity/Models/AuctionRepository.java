@@ -4,7 +4,6 @@ import com.example.soldaplication.R;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -22,6 +21,7 @@ public class AuctionRepository {
     }
     public AuctionRepository()
     {
+
         User seller = new User();
         User buyer = new User();
         auctions = new ArrayList<>();
@@ -34,6 +34,12 @@ public class AuctionRepository {
     public List<Auction> getAuctions()
     {
         return auctions;
+    }
+
+    public static User sampleUser()
+    {
+        User sample = new User(1,"juan","Torres","sample@hotmail.com","123","lima",123456789,1234,1234);
+        return sample;
     }
 
 

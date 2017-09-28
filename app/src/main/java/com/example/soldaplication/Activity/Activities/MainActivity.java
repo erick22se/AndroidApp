@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.soldaplication.Activity.Fragments.DashboardFragment;
 import com.example.soldaplication.Activity.Fragments.MyAuctionsFragment;
 import com.example.soldaplication.Activity.Fragments.StoreFragment;
+import com.example.soldaplication.Activity.Models.User;
 import com.example.soldaplication.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.content, new StoreFragment()).commit();
@@ -72,7 +74,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_profile)
         {
+            User user = User.fromBundle(getIntent().getExtras());
             Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+            intent.putExtras(user.toBundle());
             startActivity(intent);
         }
         if (item.getItemId() == R.id.action_auction_history)

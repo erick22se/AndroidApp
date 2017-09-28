@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.soldaplication.Activity.Models.AuctionRepository;
+import com.example.soldaplication.Activity.Models.User;
 import com.example.soldaplication.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -34,7 +36,13 @@ public class LoginActivity extends AppCompatActivity {
                 email = (TextInputEditText)findViewById(R.id.emailTextInputEdit);
                 password = (TextInputEditText)findViewById(R.id.passwordTextInputEdit);
                 if(email.getText().length() == 0 && password.getText().length() == 0)
-                   startActivity(new Intent(view.getContext(),MainActivity.class));
+                {
+                    User user = AuctionRepository.sampleUser();
+                    Intent intent = new Intent(view.getContext(),MainActivity.class);
+                    intent.putExtras(user.toBundle());
+                    startActivity(intent);
+                }
+
                 else
                     Snackbar.make(view, "Your email or password are wrong", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
